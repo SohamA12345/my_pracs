@@ -7,17 +7,19 @@ git branch // Shows all branches.
 
 git branch branch-name // New branch is created
 
-git checkout branch-name // See all the
+git checkout branch-name // Switch to the branch-name.
 
-// Staging
+// Staging (declaring new versions)
 git add . // To stage all the files.
 
 git rm filename.cpp // To delete a file and stage it.
 
 git mv filename.cpp // To move a file and stage it.
 
-// Committing
+// Committing (sets all files back to unmodified status)
 git commit -m "A message about whats's changed in this revision" // All the staged files saved in one revision.
 
 git commit -am "A message about whats's changed in this revision" // All the files from previous revision are included in this revision.
 
+// Saving changes to github
+git push // 
