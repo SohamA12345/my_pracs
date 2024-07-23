@@ -10,4 +10,6 @@ int min_element(int array[], int n) {
       min = array[i];
     }
   }
+
+  return min;
 }
