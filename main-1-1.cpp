@@ -7,4 +7,6 @@ int main() {
   int sum = sum_diagonal(array);
 
   std::cout << sum << std::endl; // expecting sum as 1+2+3+4 = 10.
+
+  return 0;
 }

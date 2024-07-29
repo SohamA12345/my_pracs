@@ -7,4 +7,6 @@ int main() {
   bool identity = is_identity(array);
 
   std::cout << std::boolalpha << identity << std::endl; // expecting true.
+
+  return 0;
 }
