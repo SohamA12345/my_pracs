@@ -11,8 +11,8 @@ bool is_palindrome(int integers[], int length) {
 int sum_if_palindrome(int integers[], int length) {
   int sum = 0;
 
-  for (int i = 0; i < length; i++) {
-    sum += integers[i];
+  if(is_palindrome(integers, length)) {
+    sum = sum_if_palindrome(integers, length);
   }
 
   return sum;
@@ -21,8 +21,8 @@ int sum_if_palindrome(int integers[], int length) {
 int sum_array_element(int integers[], int length) {
   int sum = 0;
 
-  if(is_palindrome(integers, length)) {
-    sum = sum_if_palindrome(integers, length);
+  for (int i = 0; i < length; i++) {
+    sum += integers[i];
   }
 
   return sum;
