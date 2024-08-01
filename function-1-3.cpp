@@ -10,7 +10,7 @@ void count_digits(int array[4][4]) {
     }
   }
 
-  std::cout << "0:" << digits_array[0] << ";1:" << digits_array[1] << ";2:" << digits_array[2] << ";3:" << digits_array[3] << ";4:" << digits_array[4] << ";5:" << digits_array[5] << ";6:" << digits_array[6] << ";7:" << digits_array[7] << ";8:" << digits_array[8] << ";9:" << digits_array[9] << std::endl;
+  std::cout << "0:" << digits_array[0] << ";1:" << digits_array[1] << ";2:" << digits_array[2] << ";3:" << digits_array[3] << ";4:" << digits_array[4] << ";5:" << digits_array[5] << ";6:" << digits_array[6] << ";7:" << digits_array[7] << ";8:" << digits_array[8] << ";9:" << digits_array[9] << ";" << std::endl;
 
   return;
 }
