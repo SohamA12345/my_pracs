@@ -22,7 +22,7 @@ int sum_if_palindrome(int integers[], int length) {
   int sum = 0;
 
   if(is_palindrome(integers, length)) {
-    sum = sum_if_palindrome(integers, length);
+    sum = sum_array_element(integers, length);
   }
 
   return sum;
