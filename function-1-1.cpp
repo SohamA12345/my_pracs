@@ -1,9 +1,11 @@
 double arrayMin(double* array, int size) {
-  double min = 0;
+  double min = array[1];
 
   for (int i = 0; i < size; i++) {
     if (min > array[i]) {
       min = array[i];
     }
   }
+
+  return min;
 }
