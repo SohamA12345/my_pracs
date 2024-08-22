@@ -9,7 +9,7 @@ int AssetPortfolio::get_num_assets() {return current_size;}
 // returns true if any asset in the portfolio is of the specified product type
 // otherwise returns false
 bool AssetPortfolio::has_asset(std::string product) {
-  for (int i = 0; i < current_size; i++) {
+  for (int i = 0; i < max_size; i++) {
     if (this->new_asset[i].get_product_type() == product) {
       return true;
     }
