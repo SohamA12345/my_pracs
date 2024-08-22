@@ -32,4 +32,4 @@ bool AssetPortfolio::add_asset(Asset new_asset) {
   return false;
 }
 
-AssetPortfolio::~AssetPortfolio() {delete [] new_asset;}  // destructor
+AssetPortfolio::~AssetPortfolio() {}  // destructor
