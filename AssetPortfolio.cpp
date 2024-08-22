@@ -25,6 +25,7 @@ Asset* AssetPortfolio::get_assets() {return new_asset;}      // returns the arra
 bool AssetPortfolio::add_asset(Asset new_asset) {
   if (current_size <= max_size) {
     this->new_asset[current_size] = new_asset;
+    current_size++;
     return true;
   }
 
