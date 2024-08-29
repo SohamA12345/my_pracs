@@ -1,6 +1,13 @@
 #include "Vehicle.h"
 
-Vehicle::Vehicle(/* args */)
+
+int Vehicle::getID() {return ID;}
+
+Vehicle::Vehicle(int ID) : ID(ID)
+{
+}
+
+Vehicle::Vehicle() : Vehicle(0)
 {
 }
 
