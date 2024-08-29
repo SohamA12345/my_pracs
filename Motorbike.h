@@ -6,6 +6,9 @@
 class Motorbike : public Vehicle {
   public:
     int getParkingDuration();
+    
+    Motorbike();
+    Motorbike(int ID);
 };
 
 #endif

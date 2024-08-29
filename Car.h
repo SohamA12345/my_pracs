@@ -6,6 +6,9 @@
 class Car : public Vehicle {
   public:
     int getParkingDuration();
+    
+    Car();
+    Car(int ID);
 };
 
 #endif
