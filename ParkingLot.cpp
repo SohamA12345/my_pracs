@@ -8,7 +8,7 @@ ParkingLot::~ParkingLot() {
   delete [] vehicles;
 }
 
-int ParkingLot::getcount() {return vehicle_count;}
+int ParkingLot::getCount() {return vehicle_count;}
 
 void ParkingLot::parkVehicle(Vehicle* vehicle) {
   if(vehicle_count < this->max_capacity) {

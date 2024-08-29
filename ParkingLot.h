@@ -10,7 +10,7 @@ class ParkingLot {
   public:
     Vehicle** vehicles;
 
-    int getcount();
+    int getCount();
 
     ParkingLot(int max_capacity);
 
