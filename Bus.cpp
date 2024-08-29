@@ -1,7 +1,7 @@
-#include "Car.h"
+#include "Bus.h"
 
 using namespace std;
 
-int Car::getParkingDuration() {
+int Bus::getParkingDuration() {
   return (this->timeOfEntry - time(NULL)) * 0.85;
 }
