@@ -14,7 +14,7 @@ void ParkingLot::parkVehicle(Vehicle* vehicle) {
   if(vehicle_count < this->max_capacity) {
     vehicles[vehicle_count] = vehicle;
     vehicle_count++;
-  } else {cout << "The lot is full";}
+  } else {cout << "The lot is full\n";}
 }
 
 void ParkingLot::unparkVehicle(int ID) {
@@ -22,6 +22,6 @@ void ParkingLot::unparkVehicle(int ID) {
     if (vehicles[i]->getID() == ID) {
       vehicle_count--;
       delete vehicles[i];
-    } else {cout << "Vehicle not in the lot";}
+    } else {cout << "Vehicle not in the lot\n";}
   }
 }
