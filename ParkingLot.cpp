@@ -22,7 +22,7 @@ void ParkingLot::unparkVehicle(int ID) {
     if ((*vehicles[i]).getID() == ID) {
       vehicle_count--;
       delete vehicles[i];
-      break;
+      return;
     }
   }
 
