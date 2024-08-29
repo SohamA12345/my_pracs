@@ -8,6 +8,7 @@ int Vehicle::getParkingDuration() {return 0;}
 
 Vehicle::Vehicle(int ID) : ID(ID)
 {
+  this->timeOfEntry;
 }
 
 Vehicle::Vehicle() : Vehicle(0)
