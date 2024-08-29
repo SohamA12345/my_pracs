@@ -1,5 +1,6 @@
 #include "Vehicle.h"
 
+using namespace std;
 
 int Vehicle::getID() {return ID;}
 
