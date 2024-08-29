@@ -22,6 +22,6 @@ void ParkingLot::unparkVehicle(int ID) {
     if (vehicles[i]->getID() == ID) {
       vehicle_count--;
       delete vehicles[i];
-    } else {cout << "Vehicle not in the lot\n";}
+    } else {cout << "Vehicle not in the lot";}
   }
 }
