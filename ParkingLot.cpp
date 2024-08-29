@@ -23,6 +23,8 @@ void ParkingLot::unparkVehicle(int ID) {
       vehicle_count--;
       delete vehicles[i];
       break;
-    } else {cout << "Vehicle not in the lot\n";}
+    }
   }
+
+  cout << "Vehicle not in the lot\n";
 }
