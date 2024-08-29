@@ -3,7 +3,7 @@
 using namespace std;
 
 int Bus::getParkingDuration() {
-  return (this->timeOfEntry - time(NULL)) * 0.85;
+  return (time(NULL) - this->timeOfEntry) * 0.85;
 }
 
 Bus::Bus() : Vehicle() {}
