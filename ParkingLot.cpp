@@ -18,10 +18,10 @@ void ParkingLot::parkVehicle(Vehicle* vehicle) {
 }
 
 void ParkingLot::unparkVehicle(int ID) {
-  for (int i = 0; i < vehicle_count; i++) {
+  for (int i = 0; i <= vehicle_count; i++) {
     if (vehicles[i]->getID() == ID) {
       vehicle_count--;
       delete vehicles[i];
-    } else {cout << "Vehicle not in the lot";}
+    } else {cout << "Vehicle not in the lot\n";}
   }
 }
