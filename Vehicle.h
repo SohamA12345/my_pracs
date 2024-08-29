@@ -14,7 +14,7 @@ class Vehicle
     Vehicle(int ID);
     int getID();
     Vehicle();
-    ~Vehicle();
+    virtual ~Vehicle();
 
     virtual int getParkingDuration();
 };
