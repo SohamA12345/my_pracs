@@ -1,30 +1,34 @@
-#include "Helicopter.h"
-
 using namespace std;
 
-Helicopter::Helicopter() {}
+#include "Helicopter.h"
 
-Helicopter::~Helicopter() {}
+
+Helicopter::Helicopter() : AirVehicle(), name("") {}
 
 Helicopter::Helicopter(int w, string n) : AirVehicle(w), name(n) {}
 
 void Helicopter::fly(int headwind, int minutes) {
-   if (headwind < 40) {
-    this->fuel -= 0.18 * minutes;
-   } else if (headwind >= 40) {
-    this->fuel -= 0.4 * minutes;
-   } 
-   
-   if (this->weight > 5670) {
-    this->fuel -= (0.01 * (this->weight - 5670) * minutes);
-   }
+  float fuelConsumptionRate = 0.18;
 
-   if (this->fuel < 20) {
-    return;
-   }
+  if (headwind >= 40) {
+    fuelConsumptionRate = 0.4;
+  } 
+  
+  if (get_weight() > 5670) {
+    fuelConsumptionRate += 0.01 * (get_weight() - 5670);
+  }
 
-   numberOfFlights++;
+  float potentialFuel = get_fuel() - (fuelConsumptionRate * minutes);
+
+  if (potentialFuel >= 20) {
+    set_fuel(potentialFuel);
+    set_numberOfFlights(get_numberOfFlights() + 1);
+  }
 }
 
-string Helicopter::get_name() {return this->name;}
-void Helicopter::set_name() {this->name = name;}
+string Helicopter::get_name() {return name;}
+void Helicopter::set_name(string n) {this->name = n;}
+
+Helicopter::~Helicopter()
+{
+}

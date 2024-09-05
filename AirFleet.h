@@ -1,15 +1,21 @@
 #ifndef AIRFLEET_H
 #define AIRFLEET_H
 
+using namespace std;
+
 #include "AirVehicle.h"
+#include "Airplane.h"
+#include "Helicopter.h"
+
 class AirFleet
 {
+private:
+  AirVehicle* fleet[5];
 public:
   AirFleet();
-
-  AirVehicle** fleet;
-  AirVehicle** get_fleet();
   ~AirFleet();
+
+  AirVehicle** get_fleet();
 };
 
 #endif

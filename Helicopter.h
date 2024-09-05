@@ -1,10 +1,12 @@
-#include "AirVehicle.h"
-#include <string>
+#ifndef HELICOPTER_H
+#define HELICOPTER_H
 
 using namespace std;
 
-class Helicopter : public AirVehicle
-{
+#include <string>
+#include "AirVehicle.h"
+
+class Helicopter : public AirVehicle {
 private:
   string name;
 public:
@@ -14,7 +16,9 @@ public:
   void fly(int headwind, int minutes);
 
   string get_name();
-  void set_name();
+  void set_name(string n);
 
   ~Helicopter();
 };
+
+#endif
