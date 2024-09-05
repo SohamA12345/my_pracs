@@ -12,7 +12,7 @@ void Helicopter::fly(int headwind, int minutes) {
    if (headwind < 40) {
     this->fuel -= 0.18 * fuel;
    } else if (headwind >= 40) {
-    this->fuel -= 0.004 * fuel;
+    this->fuel -= 0.4 * fuel;
    } else if (this->weight > 5670) {
     this->fuel -= (0.01 * (this->weight - 5670) * minutes);
    }
