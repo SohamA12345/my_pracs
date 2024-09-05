@@ -1,6 +1,8 @@
 #include "AirVehicle.h"
 #include <string>
 
+using namespace std;
+
 class Helicopter : public AirVehicle
 {
 private:
@@ -8,5 +10,8 @@ private:
 public:
   Helicopter();
   Helicopter(int w, string n);
+
+  void fly(int headwind, int minutes);
+
   ~Helicopter();
 };
