@@ -10,12 +10,15 @@ Helicopter::Helicopter(int w, string n) : AirVehicle(w), name(n) {}
 
 void Helicopter::fly(int headwind, int minutes) {
    if (headwind < 40) {
-    this->fuel -= 0.18 * minutes;
+    this->fuel = 0.18 * minutes * fuel;
    } else if (headwind >= 40) {
-    this->fuel -= 0.4 * minutes;
-   } else if (this->weight > 5670) {
+    this->fuel = 0.4 * minutes * fuel;
+   } 
+   
+   if (this->weight > 5670) {
     this->fuel -= (0.01 * (this->weight - 5670) * minutes);
    }
+
    if (this->fuel < 20) {
     return;
    }
