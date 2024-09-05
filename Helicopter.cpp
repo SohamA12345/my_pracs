@@ -16,6 +16,11 @@ void Helicopter::fly(int headwind, int minutes) {
    } else if (this->weight > 5670) {
     this->fuel -= (0.01 * (this->weight - 5670) * minutes);
    }
+   if (this->fuel < 20) {
+    return;
+   }
+
+   numberOfFlights++;
 }
 
 string Helicopter::get_name() {return this->name;}
