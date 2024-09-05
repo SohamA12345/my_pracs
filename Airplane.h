@@ -6,8 +6,12 @@
 class Airplane
 {
 private:
-  /* data */
+  int numPassengers;
 public:
+  void reducePassegers(int x);
+  int get_numPassengers();
+  void fly(int headwind, int miutes);
+
   Airplane(/* args */);
   ~Airplane();
 };
