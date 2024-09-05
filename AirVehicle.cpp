@@ -1,6 +1,6 @@
 #include "AirVehicle.h"
 
-AirVehicle::AirVehicle() {}
+AirVehicle::AirVehicle() : fuel(0), weight(0), numberOfFlights(0) {}
 
 AirVehicle::~AirVehicle() {}
 
