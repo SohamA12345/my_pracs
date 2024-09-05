@@ -4,9 +4,9 @@ AirVehicle::AirVehicle() : fuel(0), weight(0), numberOfFlights(0) {}
 
 AirVehicle::~AirVehicle() {}
 
-AirVehicle::AirVehicle(int w) : weight(w), fuel(0), numberOfFlights(0) {}
+AirVehicle::AirVehicle(int w) : weight(w), fuel(100), numberOfFlights(0) {}
 
-void AirVehicle::refuel() {this->fuel = 100;}
+void AirVehicle::refuel() {this->fuel = 100.0;}
 void AirVehicle::fly(int headwind, int minutes) {numberOfFlights++;}
 
 int AirVehicle::get_weight() {return this->weight;}

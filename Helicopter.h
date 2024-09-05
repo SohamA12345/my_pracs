@@ -1,18 +1,12 @@
 #include "AirVehicle.h"
+#include <string>
 
 class Helicopter : public AirVehicle
 {
 private:
-  /* data */
+  string name;
 public:
-  Helicopter(/* args */);
+  Helicopter();
+  Helicopter(int w, string n);
   ~Helicopter();
 };
-
-Helicopter::Helicopter(/* args */)
-{
-}
-
-Helicopter::~Helicopter()
-{
-}
